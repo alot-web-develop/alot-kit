@@ -9,8 +9,8 @@ on:
         required: false
         type: string
 permissions:
+  # push release tags
   contents: write
-  pull-requests: write
   # npm trusted publishing (OIDC): no stored npm token
   id-token: write
 concurrency:
@@ -40,15 +40,20 @@ jobs:
           pnpm release:check --since "$base"
         env:
           INPUT_SINCE: ${{ inputs.since }}
-      - id: changesets
-        uses: changesets/action@66d7d1ddafddf1ef45f98ee51a7496f9cdadb2f4 # v2.1.2, compatible with Changesets 3
-        with:
-          version-script: pnpm version-packages
-          publish-script: pnpm release
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+      # Publishes only versions that are not on npm yet; pending changesets wait for a version PR.
+      - id: publish
+        name: Publish new versions
+        run: |
+          before="$(git tag --list '@alot-web-develop/*' | wc -l)"
+          pnpm release
+          after="$(git tag --list '@alot-web-develop/*' | wc -l)"
+          if [ "$after" -gt "$before" ]; then echo "published=true" >> "$GITHUB_OUTPUT"; fi
         env:
           # Provenance only works from CI; local publishes skip it.
           NPM_CONFIG_PROVENANCE: "true"
+      - name: Push release tags
+        if: steps.publish.outputs.published == 'true'
+        run: git push origin --tags
       - name: Install and exercise the published packages
-        if: steps.changesets.outputs.published == 'true'
+        if: steps.publish.outputs.published == 'true'
         run: pnpm verify:registry
