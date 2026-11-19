@@ -1,10 +1,12 @@
 name: Release
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
     inputs:
       since:
-        description: Last released Git ref for package changeset coverage
-        required: true
+        description: Last released Git ref for package changeset coverage, defaults to the latest release tag
+        required: false
         type: string
 permissions:
   contents: write
@@ -31,9 +33,13 @@ jobs:
           registry-url: https://registry.npmjs.org
       - run: pnpm install --frozen-lockfile
       - run: pnpm check
-      - run: pnpm release:check --since "$RELEASE_BASE"
+      - name: Check changeset coverage since the last release
+        run: |
+          base="${INPUT_SINCE:-$(git describe --tags --abbrev=0 --match '@alot-web-develop/design@*')}"
+          echo "Release base: $base"
+          pnpm release:check --since "$base"
         env:
-          RELEASE_BASE: ${{ inputs.since }}
+          INPUT_SINCE: ${{ inputs.since }}
       - id: changesets
         uses: changesets/action@66d7d1ddafddf1ef45f98ee51a7496f9cdadb2f4 # v2.1.2, compatible with Changesets 3
         with:
@@ -44,5 +50,5 @@ jobs:
           # Provenance only works from CI; local publishes skip it.
           NPM_CONFIG_PROVENANCE: "true"
       - name: Install and exercise the published packages
-        if: steps.changesets.outputs.has-changesets == 'false'
+        if: steps.changesets.outputs.published == 'true'
         run: pnpm verify:registry
