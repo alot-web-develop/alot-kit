@@ -35,18 +35,17 @@ If a consumer enforces a minimum package age, exempt only the trusted `@alot-web
 
 ## Release
 
-The manual Release workflow runs only on `main`, checks the workspace and uses Changesets 3 with its compatible
-GitHub action. Packages are published to npm with public access and, from CI, provenance through npm trusted publishing
-(OIDC): the workflow requests an `id-token` and no npm token is stored in the repository.
+Releases are automatic from `main` with Changesets 3:
 
-Trusted publishing is configured per package on npmjs.com, so a package must exist before it can be linked:
-the first publication of each package is done once by a maintainer with npm two-factor authentication, then the
-package's trusted publisher is set to this repository and the `release.yml` workflow.
+1. A pull request that changes a published package adds a changeset (`pnpm changeset`).
+2. When it is merged, the Release workflow opens or updates a "Version Packages" pull request with the new versions and changelogs.
+3. Merging that pull request publishes the changed packages to npm and pushes their Git tags.
 
-Changesets determine versions/changelogs; commit and merge version changes before publishing. The workflow supports
-version PRs when the repository permits Actions to create them. After publication, `pnpm verify:registry` installs
-all six exact versions into a disposable consumer and exercises real HTTP API/server interoperability, UI rendering,
-design CSS resolution, utils and the installed CLI. The same command runs locally without credentials.
+Every run checks the workspace and verifies changeset coverage since the latest release tag. Publishing uses npm
+trusted publishing (OIDC) from `release.yml`: no npm token is stored and every version gets provenance. After a
+publication, `pnpm verify:registry` installs all six exact versions into a disposable consumer and exercises real
+HTTP API/server interoperability, UI rendering, design CSS resolution, utils and the installed CLI; it also runs
+locally without credentials. The workflow can be started manually (Actions → Release) with an optional base ref.
 
 ## License
 
