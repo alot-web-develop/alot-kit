@@ -38,8 +38,8 @@ If a consumer enforces a minimum package age, exempt only the trusted `@alot-web
 Releases are automatic from `main` with Changesets 3:
 
 1. A pull request that changes a published package adds a changeset (`pnpm changeset`).
-2. When it is merged, the Release workflow opens or updates a "Version Packages" pull request with the new versions and changelogs.
-3. Merging that pull request publishes the changed packages to npm and pushes their Git tags.
+2. To release, open a pull request that runs `pnpm version-packages`: it applies the pending changesets to versions and changelogs.
+3. Merging it to `main` publishes the versions that are not on npm yet and pushes their Git tags. Pushes without a version change publish nothing.
 
 Every run checks the workspace and verifies changeset coverage since the latest release tag. Publishing uses npm
 trusted publishing (OIDC) from `release.yml`: no npm token is stored and every version gets provenance. After a
