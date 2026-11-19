@@ -1,0 +1,23 @@
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/utilities.css";
+@import "nativewind/theme";
+@import "@alot-web-develop/design/nativewind.css";
+
+@source "../node_modules/@alot-web-develop/ui-native";
+
+/* Brand overrides: redefine semantic vars from @alot-web-develop/design (dark values go in the media query) */
+:root {
+  /* --primary: ...; */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* --primary: ...; */
+  }
+}
+
+/* Extra project tokens */
+@theme {
+  /* --color-pending: ...; */
+}

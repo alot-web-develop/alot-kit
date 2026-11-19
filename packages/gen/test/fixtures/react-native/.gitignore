@@ -1,0 +1,4 @@
+node_modules/
+.out/
+.metro-check/
+package-lock.json

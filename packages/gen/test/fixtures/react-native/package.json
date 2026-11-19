@@ -1,0 +1,47 @@
+{
+  "name": "alot-templates-fixture-rn",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit -p ."
+  },
+  "dependencies": {
+    "@better-auth/expo": "1.7.15",
+    "@react-native-async-storage/async-storage": "^2.2.0",
+    "@tailwindcss/postcss": "4.1.12",
+    "@tanstack/react-query": "^5.105.1",
+    "@types/react": "^19.2.0",
+    "better-auth": "1.7.15",
+    "class-variance-authority": "^0.7.1",
+    "expo": "^58.0.22",
+    "expo-constants": "*",
+    "expo-linking": "*",
+    "expo-localization": "*",
+    "expo-network": "*",
+    "expo-router": "^58.0.29",
+    "expo-secure-store": "*",
+    "expo-splash-screen": "*",
+    "expo-system-ui": "*",
+    "i18next": "^26.6.0",
+    "lightningcss": "1.30.1",
+    "nativewind": "5.0.0-rc.0",
+    "postcss": "*",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "react-hook-form": "^7.91.0",
+    "react-i18next": "^17.1.10",
+    "react-native": "^0.88.1",
+    "react-native-css": "3.1.0-rc.0",
+    "react-native-reanimated": "*",
+    "react-native-safe-area-context": "~5.10.1",
+    "react-native-worklets": "0.13.0",
+    "tailwindcss": "4.1.12",
+    "typescript": "~6.0.3",
+    "vitest": "^4.1.12",
+    "zod": "^4.6.7",
+    "zustand": "^5.0.0"
+  },
+  "overrides": {
+    "lightningcss": "1.30.1"
+  }
+}

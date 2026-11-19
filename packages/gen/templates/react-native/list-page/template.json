@@ -1,0 +1,34 @@
+{
+  "kind": "list-page",
+  "framework": "react-native",
+  "description": "List page: search + pagination + FlatList in QueryBoundary; list route syncs search/page to URL",
+  "prefix": "alot-list-page",
+  "scope": "typescriptreact",
+  "requiresFeature": true,
+  "role": [
+    "app"
+  ],
+  "files": [
+    {
+      "src": "__Names__ListPage.tsx",
+      "dest": "{paths.features}/{feature}/pages/__Names__ListPage.tsx",
+      "snippet": true
+    },
+    {
+      "src": "components/__Names__List.tsx",
+      "dest": "{paths.features}/{feature}/components/__Names__List.tsx"
+    },
+    {
+      "src": "components/__Name__ListItem.tsx",
+      "dest": "{paths.features}/{feature}/components/__Name__ListItem.tsx"
+    },
+    {
+      "src": "index.tsx",
+      "dest": "{paths.routes}/(app)/{feature}/index.tsx"
+    }
+  ],
+  "next": [
+    "route",
+    "locale"
+  ]
+}

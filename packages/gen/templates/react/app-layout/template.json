@@ -1,0 +1,21 @@
+{
+  "kind": "app-layout",
+  "framework": "react",
+  "description": "Root shell: sidebar nav (Sheet on mobile), header with theme toggle + sign out, content outlet; pathless _app route guarded by RequireAuth",
+  "prefix": "alot-app-layout",
+  "scope": "typescriptreact",
+  "requiresFeature": false,
+  "role": ["app"],
+  "files": [
+    { "src": "layout/navItems.ts", "dest": "{paths.app}/layout/navItems.ts" },
+    { "src": "layout/AppNav.tsx", "dest": "{paths.app}/layout/AppNav.tsx" },
+    { "src": "layout/AppSidebar.tsx", "dest": "{paths.app}/layout/AppSidebar.tsx" },
+    { "src": "layout/MobileNav.tsx", "dest": "{paths.app}/layout/MobileNav.tsx" },
+    { "src": "layout/ThemeToggle.tsx", "dest": "{paths.app}/layout/ThemeToggle.tsx" },
+    { "src": "layout/AppHeader.tsx", "dest": "{paths.app}/layout/AppHeader.tsx" },
+    { "src": "layout/AppLayout.tsx", "dest": "{paths.app}/layout/AppLayout.tsx" },
+    { "src": "routes/route.tsx", "dest": "{paths.routes}/_app/route.tsx" },
+    { "src": "routes/index.tsx", "dest": "{paths.routes}/_app/index.tsx" }
+  ],
+  "next": ["layout", "list-page"]
+}

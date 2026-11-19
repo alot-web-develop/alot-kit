@@ -1,0 +1,1 @@
+Generated sample of every React kind (review only, not built/linted). Init kinds with Name `App`; task kinds as `Order` / feature `orders`; `store OrderPreferences --variant persist`. `src/types` and `src/routeTree.gen.ts` come from the fixture / router generator and are omitted.

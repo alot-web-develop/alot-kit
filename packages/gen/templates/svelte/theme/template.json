@@ -1,0 +1,27 @@
+{
+  "kind": "theme",
+  "framework": "svelte",
+  "description": "Theme",
+  "prefix": "alot-theme",
+  "scope": "typescript",
+  "requiresFeature": false,
+  "role": [
+    "app"
+  ],
+  "files": [
+    {
+      "src": "app.css",
+      "dest": "{paths.src}/app.css",
+      "snippet": true
+    },
+    {
+      "src": "ThemeProvider.svelte",
+      "dest": "{paths.lib}/ThemeProvider.svelte"
+    },
+    {
+      "src": "theme.svelte.ts",
+      "dest": "{paths.lib}/theme.svelte.ts"
+    }
+  ],
+  "next": []
+}

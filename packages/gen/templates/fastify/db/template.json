@@ -1,0 +1,15 @@
+{
+  "kind": "db",
+  "framework": "fastify",
+  "description": "DB plugin decorating app.db + app.pingDb, non-fatal connect (degraded), index bootstrap (native) or Mongoose connection",
+  "prefix": "alot-fastify-db",
+  "scope": "typescript",
+  "requiresFeature": false,
+  "role": ["api"],
+  "files": [
+    { "src": "db.ts", "dest": "{paths.plugins}/db.ts", "when": { "db": "mongodb-native" }, "snippet": true },
+    { "src": "index.ts", "dest": "{paths.models}/index.ts", "when": { "db": "mongodb-native" } },
+    { "src": "db.mongoose.ts", "dest": "{paths.plugins}/db.ts", "when": { "db": "mongoose" }, "snippet": true }
+  ],
+  "next": ["auth", "server-entry"]
+}

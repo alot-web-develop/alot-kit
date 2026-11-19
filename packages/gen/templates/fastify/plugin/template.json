@@ -1,0 +1,13 @@
+{
+  "kind": "plugin",
+  "framework": "fastify",
+  "description": "fastify-plugin wrapped decorator with typed options and module augmentation (example: external API client validated with zod)",
+  "prefix": "alot-fastify-plugin",
+  "scope": "typescript",
+  "requiresFeature": false,
+  "role": ["api"],
+  "files": [
+    { "src": "__name__.ts", "dest": "{paths.plugins}/__name__.ts", "snippet": true }
+  ],
+  "next": []
+}

@@ -1,0 +1,33 @@
+{
+  "name": "alot-templates-fixture-fastify",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit -p .",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@alot-web-develop/server": "file:../../../../server",
+    "@better-auth/expo": "1.7.15",
+    "@fastify/cors": "^11.0.0",
+    "@fastify/helmet": "^13.0.0",
+    "@fastify/rate-limit": "^11.0.0",
+    "@fastify/swagger": "9.9.2",
+    "@fastify/swagger-ui": "^5.0.0 || ^6.0.0",
+    "better-auth": "1.7.15",
+    "fastify": "^5.12.0",
+    "fastify-plugin": "^5.0.0 || ^6.0.0",
+    "fastify-type-provider-zod": "^7.0.0",
+    "mongodb": "^7.0.0",
+    "mongoose": "^9.0.0",
+    "zod": "^4.1.5"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.2",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.5"
+  },
+  "overrides": {
+    "@fastify/swagger": "9.9.2"
+  }
+}

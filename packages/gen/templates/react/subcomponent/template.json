@@ -1,0 +1,14 @@
+{
+  "kind": "subcomponent",
+  "framework": "react",
+  "description": "Page subcomponent: data via props, formatting from utils, logic in hooks",
+  "prefix": "alot-sub",
+  "scope": "typescriptreact",
+  "requiresFeature": true,
+  "requiresEntity": true,
+  "role": ["app"],
+  "files": [
+    { "src": "__Name__.tsx", "dest": "{paths.features}/{feature}/components/__Name__.tsx", "snippet": true }
+  ],
+  "next": ["hook"]
+}

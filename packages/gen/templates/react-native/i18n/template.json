@@ -1,0 +1,29 @@
+{
+  "kind": "i18n",
+  "framework": "react-native",
+  "description": "i18next setup (expo-localization) + locales/{it,en} + typed keys",
+  "prefix": "alot-i18n",
+  "scope": "typescript",
+  "requiresFeature": false,
+  "role": [
+    "app"
+  ],
+  "files": [
+    {
+      "src": "i18n.ts",
+      "dest": "{paths.lib}/i18n.ts",
+      "snippet": true
+    },
+    {
+      "src": "en.ts",
+      "dest": "{paths.src}/locales/en.ts"
+    },
+    {
+      "src": "it.ts",
+      "dest": "{paths.src}/locales/it.ts"
+    }
+  ],
+  "next": [
+    "locale"
+  ]
+}

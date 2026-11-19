@@ -1,0 +1,13 @@
+{
+  "kind": "schema",
+  "framework": "fastify",
+  "description": "Zod schemas for an entity: response shape, create/update body, params, list query (+ inferred types)",
+  "prefix": "alot-fastify-schema",
+  "scope": "typescript",
+  "requiresFeature": false,
+  "role": ["api"],
+  "files": [
+    { "src": "__name__.ts", "dest": "{paths.schemas}/__name__.ts", "snippet": true }
+  ],
+  "next": ["model", "resource"]
+}

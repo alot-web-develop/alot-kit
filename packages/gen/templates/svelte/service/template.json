@@ -1,0 +1,23 @@
+{
+  "kind": "service",
+  "framework": "svelte",
+  "description": "Raw API calls for an entity via the shared fetcher (returns result union)",
+  "prefix": "alot-service",
+  "scope": "typescript",
+  "requiresFeature": false,
+  "role": [
+    "app"
+  ],
+  "files": [
+    {
+      "src": "__name__.ts",
+      "dest": "{paths.api}/services/__name__.ts",
+      "snippet": true
+    }
+  ],
+  "next": [
+    "query-keys",
+    "query",
+    "mutation"
+  ]
+}

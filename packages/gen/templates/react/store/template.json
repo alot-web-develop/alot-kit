@@ -1,0 +1,14 @@
+{
+  "kind": "store",
+  "framework": "react",
+  "description": "Client state store (zustand); --variant persist writes the localStorage-persisted version",
+  "prefix": "alot-store",
+  "scope": "typescript",
+  "requiresFeature": true,
+  "role": ["app"],
+  "files": [
+    { "src": "use__Name__Store.ts", "dest": "{paths.features}/{feature}/stores/use__Name__Store.ts", "snippet": true, "variant": "default" },
+    { "src": "use__Name__Store.persist.ts", "dest": "{paths.features}/{feature}/stores/use__Name__Store.ts", "snippet": true, "variant": "persist" }
+  ],
+  "next": []
+}

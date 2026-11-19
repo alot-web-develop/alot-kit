@@ -1,0 +1,31 @@
+{
+  "kind": "page",
+  "framework": "react-native",
+  "description": "Feature page: orchestration only (params as props, QueryBoundary, subcomponents)",
+  "prefix": "alot-page",
+  "scope": "typescriptreact",
+  "requiresFeature": true,
+  "role": [
+    "app"
+  ],
+  "files": [
+    {
+      "src": "__Name__Page.tsx",
+      "dest": "{paths.features}/{feature}/pages/__Name__Page.tsx",
+      "snippet": true
+    },
+    {
+      "src": "components/__Name__Header.tsx",
+      "dest": "{paths.features}/{feature}/components/__Name__Header.tsx"
+    },
+    {
+      "src": "components/__Name__Content.tsx",
+      "dest": "{paths.features}/{feature}/components/__Name__Content.tsx"
+    }
+  ],
+  "next": [
+    "query",
+    "subcomponent",
+    "route"
+  ]
+}

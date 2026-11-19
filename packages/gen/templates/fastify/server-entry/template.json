@@ -1,0 +1,19 @@
+{
+  "kind": "server-entry",
+  "framework": "fastify",
+  "description": "index.ts (listen + graceful shutdown) + buildApp (plugins, error handler, public/protected scopes) + test helpers",
+  "prefix": "alot-fastify-server-entry",
+  "scope": "typescript",
+  "requiresFeature": false,
+  "role": ["api"],
+  "files": [
+    { "src": "index.ts", "dest": "{paths.src}/index.ts" },
+    { "src": "app.ts", "dest": "{paths.src}/app.ts", "snippet": true },
+    { "src": "routes/public.ts", "dest": "{paths.routes}/public.ts" },
+    { "src": "routes/protected.ts", "dest": "{paths.routes}/protected.ts" },
+    { "src": "test/helpers/app.ts", "dest": "{paths.tests}/helpers/app.ts" },
+    { "src": "test/helpers/auth.ts", "dest": "{paths.tests}/helpers/auth.ts" },
+    { "src": "vitest.config.ts", "dest": "vitest.config.ts" }
+  ],
+  "next": ["resource", "route"]
+}

@@ -1,0 +1,13 @@
+{
+  "kind": "hook",
+  "framework": "react",
+  "description": "Feature hook: UI state + handlers, keeps components declarative",
+  "prefix": "alot-hook",
+  "scope": "typescript",
+  "requiresFeature": true,
+  "role": ["app"],
+  "files": [
+    { "src": "use__Name__.ts", "dest": "{paths.features}/{feature}/hooks/use__Name__.ts", "snippet": true }
+  ],
+  "next": []
+}

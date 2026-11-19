@@ -1,0 +1,25 @@
+{
+  "kind": "query",
+  "framework": "svelte",
+  "description": "Query",
+  "prefix": "alot-query",
+  "scope": "typescript",
+  "requiresFeature": false,
+  "role": [
+    "app"
+  ],
+  "files": [
+    {
+      "src": "useGet__Name__.ts",
+      "dest": "{paths.api}/queries/useGet__Name__.ts",
+      "snippet": true
+    },
+    {
+      "src": "useList__Names__.ts",
+      "dest": "{paths.api}/queries/useList__Names__.ts"
+    }
+  ],
+  "next": [
+    "mutation"
+  ]
+}

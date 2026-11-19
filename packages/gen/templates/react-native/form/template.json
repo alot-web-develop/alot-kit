@@ -1,0 +1,25 @@
+{
+  "kind": "form",
+  "framework": "react-native",
+  "description": "Zod schema + form component using @alot-web-develop/ui-native/form",
+  "prefix": "alot-form",
+  "scope": "typescriptreact",
+  "requiresFeature": true,
+  "role": [
+    "app"
+  ],
+  "files": [
+    {
+      "src": "schemas/__name__Schema.ts",
+      "dest": "{paths.features}/{feature}/schemas/__name__Schema.ts"
+    },
+    {
+      "src": "__Name__Form.tsx",
+      "dest": "{paths.features}/{feature}/components/__Name__Form.tsx",
+      "snippet": true
+    }
+  ],
+  "next": [
+    "mutation"
+  ]
+}

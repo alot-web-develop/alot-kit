@@ -1,0 +1,19 @@
+{
+  "kind": "primitive",
+  "framework": "svelte",
+  "description": "Primitive",
+  "prefix": "alot-primitive",
+  "scope": "svelte",
+  "requiresFeature": false,
+  "role": [
+    "ui-lib"
+  ],
+  "files": [
+    {
+      "src": "__Name__.svelte",
+      "dest": "{paths.primitives}/__Name__.svelte",
+      "snippet": true
+    }
+  ],
+  "next": []
+}

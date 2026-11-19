@@ -1,0 +1,5 @@
+overrides:
+  "@alot-web-develop/design": file:./alot-design.tgz
+allowBuilds:
+  esbuild: true
+  mongodb-memory-server: false

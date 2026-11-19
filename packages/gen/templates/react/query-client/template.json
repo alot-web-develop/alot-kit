@@ -1,0 +1,13 @@
+{
+  "kind": "query-client",
+  "framework": "react",
+  "description": "QueryClient defaults: staleTime, no retry on 4xx, global error toast (background refetch + mutations)",
+  "prefix": "alot-query-client",
+  "scope": "typescript",
+  "requiresFeature": false,
+  "role": ["app"],
+  "files": [
+    { "src": "queryClient.ts", "dest": "{paths.lib}/queryClient.ts" }
+  ],
+  "next": ["providers"]
+}

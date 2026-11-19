@@ -1,0 +1,34 @@
+{
+  "kind": "resource",
+  "framework": "fastify",
+  "description": "CRUD resource: schema + model + service + protected route plugin + inject test, wired into the protected scope",
+  "prefix": "alot-fastify-resource",
+  "scope": "typescript",
+  "requiresFeature": false,
+  "role": ["api"],
+  "files": [
+    { "src": "../schema/__name__.ts", "dest": "{paths.schemas}/__name__.ts" },
+    { "src": "../model/__name__.ts", "dest": "{paths.models}/__name__.ts", "when": { "db": "mongodb-native" } },
+    { "src": "../model/__name__.mongoose.ts", "dest": "{paths.models}/__name__.ts", "when": { "db": "mongoose" } },
+    { "src": "__name__Service.ts", "dest": "{paths.services}/__name__.ts", "when": { "db": "mongodb-native" } },
+    { "src": "__name__Service.mongoose.ts", "dest": "{paths.services}/__name__.ts", "when": { "db": "mongoose" } },
+    { "src": "__names-kebab__.ts", "dest": "{paths.routes}/__names-kebab__.ts", "snippet": true },
+    { "src": "../test/__names-kebab__.test.ts", "dest": "{paths.tests}/routes/__names-kebab__.test.ts" }
+  ],
+  "wire": [
+    {
+      "when": { "db": "mongodb-native" },
+      "file": "{paths.models}/index.ts",
+      "import": "import { ensure__Name__Indexes } from './__name__.js';",
+      "after": "const indexBuilders: TIndexBuilder[] = [",
+      "line": "  ensure__Name__Indexes,"
+    },
+    {
+      "file": "{paths.routes}/protected.ts",
+      "import": "import { __name__Routes } from './__names-kebab__.js';",
+      "after": "// alot-gen: protected routes",
+      "line": "  await _app.register(__name__Routes, { prefix: '/__names-kebab__' });"
+    }
+  ],
+  "next": []
+}

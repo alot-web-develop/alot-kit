@@ -1,0 +1,21 @@
+{
+  "kind": "query-keys",
+  "framework": "svelte",
+  "description": "Query key factory for an entity",
+  "prefix": "alot-keys",
+  "scope": "typescript",
+  "requiresFeature": false,
+  "role": [
+    "app"
+  ],
+  "files": [
+    {
+      "src": "__name__Keys.ts",
+      "dest": "{paths.api}/keys/__name__Keys.ts",
+      "snippet": true
+    }
+  ],
+  "next": [
+    "query"
+  ]
+}

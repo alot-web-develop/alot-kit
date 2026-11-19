@@ -1,0 +1,23 @@
+{
+  "kind": "context",
+  "framework": "svelte",
+  "description": "Context",
+  "prefix": "alot-context",
+  "scope": "svelte",
+  "requiresFeature": true,
+  "role": [
+    "app"
+  ],
+  "files": [
+    {
+      "src": "__name__Context.ts",
+      "dest": "{paths.features}/{feature}/context/__name__Context.ts",
+      "snippet": true
+    },
+    {
+      "src": "__Name__Provider.svelte",
+      "dest": "{paths.features}/{feature}/context/__Name__Provider.svelte"
+    }
+  ],
+  "next": []
+}

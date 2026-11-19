@@ -1,0 +1,37 @@
+{
+  "kind": "locale",
+  "framework": "react-native",
+  "description": "Feature locale namespace features/<feature>/locales/{it,en}, auto-registered in src/locales",
+  "prefix": "alot-locale",
+  "scope": "typescript",
+  "requiresFeature": true,
+  "role": [
+    "app"
+  ],
+  "files": [
+    {
+      "src": "en.ts",
+      "dest": "{paths.features}/{feature}/locales/en.ts",
+      "snippet": true
+    },
+    {
+      "src": "it.ts",
+      "dest": "{paths.features}/{feature}/locales/it.ts"
+    }
+  ],
+  "next": [],
+  "wire": [
+    {
+      "file": "{paths.src}/locales/en.ts",
+      "import": "import { __feature__En } from '@/features/__feature__/locales/en';",
+      "after": "const features = {",
+      "line": "  __feature__: __feature__En,"
+    },
+    {
+      "file": "{paths.src}/locales/it.ts",
+      "import": "import { __feature__It } from '@/features/__feature__/locales/it';",
+      "after": "const features = {",
+      "line": "  __feature__: __feature__It,"
+    }
+  ]
+}

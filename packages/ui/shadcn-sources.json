@@ -1,0 +1,157 @@
+[
+  {
+    "name": "button",
+    "url": "https://ui.shadcn.com/r/styles/new-york-v4/button.json",
+    "dependencies": ["cn", "radix-ui"]
+  },
+  {
+    "name": "input",
+    "url": "https://ui.shadcn.com/r/styles/new-york-v4/input.json",
+    "dependencies": ["cn"]
+  },
+  {
+    "name": "textarea",
+    "url": "https://ui.shadcn.com/r/styles/new-york-v4/textarea.json",
+    "dependencies": ["cn"]
+  },
+  {
+    "name": "label",
+    "url": "https://ui.shadcn.com/r/styles/new-york-v4/label.json",
+    "dependencies": ["cn", "radix-ui"]
+  },
+  {
+    "name": "checkbox",
+    "url": "https://ui.shadcn.com/r/styles/new-york-v4/checkbox.json",
+    "dependencies": ["cn", "radix-ui"]
+  },
+  {
+    "name": "select",
+    "url": "https://ui.shadcn.com/r/styles/new-york-v4/select.json",
+    "dependencies": ["cn", "radix-ui"]
+  },
+  {
+    "name": "badge",
+    "url": "https://ui.shadcn.com/r/styles/new-york-v4/badge.json",
+    "dependencies": ["cn", "radix-ui"]
+  },
+  {
+    "name": "dialog",
+    "url": "https://ui.shadcn.com/r/styles/new-york-v4/dialog.json",
+    "dependencies": ["cn", "radix-ui"]
+  },
+  {
+    "name": "card",
+    "url": "https://ui.shadcn.com/r/styles/new-york-v4/card.json",
+    "dependencies": ["cn"]
+  },
+  {
+    "name": "separator",
+    "url": "https://ui.shadcn.com/r/styles/new-york-v4/separator.json",
+    "dependencies": ["cn", "radix-ui"]
+  },
+  {
+    "name": "skeleton",
+    "url": "https://ui.shadcn.com/r/styles/new-york-v4/skeleton.json",
+    "dependencies": ["cn"]
+  },
+  {
+    "name": "table",
+    "url": "https://ui.shadcn.com/r/styles/new-york-v4/table.json",
+    "dependencies": ["cn"]
+  },
+  {
+    "name": "tabs",
+    "url": "https://ui.shadcn.com/r/styles/new-york-v4/tabs.json",
+    "dependencies": ["cn", "radix-ui"]
+  },
+  {
+    "name": "accordion",
+    "url": "https://ui.shadcn.com/r/styles/new-york-v4/accordion.json",
+    "dependencies": ["cn", "radix-ui"]
+  },
+  {
+    "name": "alert",
+    "url": "https://ui.shadcn.com/r/styles/new-york-v4/alert.json",
+    "dependencies": ["cn"]
+  },
+  {
+    "name": "switch",
+    "url": "https://ui.shadcn.com/r/styles/new-york-v4/switch.json",
+    "dependencies": ["cn", "radix-ui"]
+  },
+  {
+    "name": "tooltip",
+    "url": "https://ui.shadcn.com/r/styles/new-york-v4/tooltip.json",
+    "dependencies": ["cn", "radix-ui"]
+  },
+  {
+    "name": "popover",
+    "url": "https://ui.shadcn.com/r/styles/new-york-v4/popover.json",
+    "dependencies": ["cn", "radix-ui"]
+  },
+  {
+    "name": "dropdown-menu",
+    "url": "https://ui.shadcn.com/r/styles/new-york-v4/dropdown-menu.json",
+    "dependencies": ["cn", "radix-ui"]
+  },
+  {
+    "name": "scroll-area",
+    "url": "https://ui.shadcn.com/r/styles/new-york-v4/scroll-area.json",
+    "dependencies": ["cn", "radix-ui"]
+  },
+  {
+    "name": "radio-group",
+    "url": "https://ui.shadcn.com/r/styles/new-york-v4/radio-group.json",
+    "dependencies": ["cn", "radix-ui"]
+  },
+  {
+    "name": "progress",
+    "url": "https://ui.shadcn.com/r/styles/new-york-v4/progress.json",
+    "dependencies": ["cn", "radix-ui"]
+  },
+  {
+    "name": "toggle",
+    "url": "https://ui.shadcn.com/r/styles/new-york-v4/toggle.json",
+    "dependencies": ["cn", "radix-ui"]
+  },
+  {
+    "name": "toggle-group",
+    "url": "https://ui.shadcn.com/r/styles/new-york-v4/toggle-group.json",
+    "dependencies": ["cn", "radix-ui"]
+  },
+  {
+    "name": "sheet",
+    "url": "https://ui.shadcn.com/r/styles/new-york-v4/sheet.json",
+    "dependencies": ["cn", "radix-ui"]
+  },
+  {
+    "name": "aspect-ratio",
+    "url": "https://ui.shadcn.com/r/styles/new-york-v4/aspect-ratio.json",
+    "dependencies": ["radix-ui"]
+  },
+  {
+    "name": "avatar",
+    "url": "https://ui.shadcn.com/r/styles/new-york-v4/avatar.json",
+    "dependencies": ["cn", "radix-ui"]
+  },
+  {
+    "name": "collapsible",
+    "url": "https://ui.shadcn.com/r/styles/new-york-v4/collapsible.json",
+    "dependencies": ["radix-ui"]
+  },
+  {
+    "name": "hover-card",
+    "url": "https://ui.shadcn.com/r/styles/new-york-v4/hover-card.json",
+    "dependencies": ["cn", "radix-ui"]
+  },
+  {
+    "name": "slider",
+    "url": "https://ui.shadcn.com/r/styles/new-york-v4/slider.json",
+    "dependencies": ["cn", "radix-ui"]
+  },
+  {
+    "name": "pagination",
+    "url": "https://ui.shadcn.com/r/styles/new-york-v4/pagination.json",
+    "dependencies": ["cn"]
+  }
+]

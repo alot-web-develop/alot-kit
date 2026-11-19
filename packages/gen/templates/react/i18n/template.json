@@ -1,0 +1,18 @@
+{
+  "kind": "i18n",
+  "framework": "react",
+  "description": "i18next setup with typed keys: common locales {it,en} + feature locales auto-registered from features/*/locales",
+  "prefix": "alot-i18n",
+  "scope": "typescript",
+  "requiresFeature": false,
+  "role": ["app"],
+  "files": [
+    { "src": "lib/index.ts", "dest": "{paths.lib}/i18n/index.ts" },
+    { "src": "lib/resources.ts", "dest": "{paths.lib}/i18n/resources.ts" },
+    { "src": "lib/collectFeatureLocales.ts", "dest": "{paths.lib}/i18n/collectFeatureLocales.ts" },
+    { "src": "lib/collectFeatureLocales.test.ts", "dest": "{paths.lib}/i18n/collectFeatureLocales.test.ts" },
+    { "src": "locales/it.ts", "dest": "{paths.locales}/it.ts" },
+    { "src": "locales/en.ts", "dest": "{paths.locales}/en.ts" }
+  ],
+  "next": ["locale"]
+}

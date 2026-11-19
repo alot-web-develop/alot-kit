@@ -1,0 +1,13 @@
+{
+  "kind": "primitive",
+  "framework": "react",
+  "description": "UI primitive with CVA variants (UI lib only)",
+  "prefix": "alot-primitive",
+  "scope": "typescriptreact",
+  "requiresFeature": false,
+  "role": ["ui-lib"],
+  "files": [
+    { "src": "__name-kebab__.tsx", "dest": "{paths.primitives}/__name-kebab__.tsx", "snippet": true }
+  ],
+  "next": []
+}

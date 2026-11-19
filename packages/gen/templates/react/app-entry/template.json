@@ -1,0 +1,16 @@
+{
+  "kind": "app-entry",
+  "framework": "react",
+  "description": "main.tsx mounting AppProviders + TanStack Router (file routes, root route with queryClient context)",
+  "prefix": "alot-app-entry",
+  "scope": "typescriptreact",
+  "requiresFeature": false,
+  "role": ["app"],
+  "files": [
+    { "src": "main.tsx", "dest": "{paths.src}/main.tsx" },
+    { "src": "vite-env.d.ts", "dest": "{paths.src}/vite-env.d.ts" },
+    { "src": "router.ts", "dest": "{paths.app}/router.ts" },
+    { "src": "routes/__root.tsx", "dest": "{paths.routes}/__root.tsx" }
+  ],
+  "next": ["app-layout"]
+}

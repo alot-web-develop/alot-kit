@@ -1,0 +1,19 @@
+{
+  "kind": "layout",
+  "framework": "svelte",
+  "description": "Layout",
+  "prefix": "alot-layout",
+  "scope": "svelte",
+  "requiresFeature": true,
+  "role": [
+    "app"
+  ],
+  "files": [
+    {
+      "src": "+layout.svelte",
+      "dest": "{paths.routes}/(protected)/__names-kebab__/+layout.svelte",
+      "snippet": true
+    }
+  ],
+  "next": []
+}

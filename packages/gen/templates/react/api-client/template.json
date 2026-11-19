@@ -1,0 +1,13 @@
+{
+  "kind": "api-client",
+  "framework": "react",
+  "description": "Shared API client: createFetcher with auth token and sign-out on 401",
+  "prefix": "alot-api-client",
+  "scope": "typescript",
+  "requiresFeature": false,
+  "role": ["app"],
+  "files": [
+    { "src": "client.ts", "dest": "{paths.api}/client.ts" }
+  ],
+  "next": ["service"]
+}

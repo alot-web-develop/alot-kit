@@ -1,0 +1,61 @@
+import { SYSTEM_MONO } from "../../src/themes/shared.js";
+import type { TTheme, TThemeColors } from "../../src/types.js";
+
+const dark: TThemeColors = {
+  background: "#0b0e19",
+  foreground: "#d4d4d4",
+  card: "#13141b",
+  "card-foreground": "#d4d4d4",
+  popover: "#1a1b25",
+  "popover-foreground": "#d4d4d4",
+  primary: "#cdb092",
+  "primary-foreground": "#13141b",
+  secondary: "#1d244a",
+  "secondary-foreground": "#e6e6eb",
+  muted: "#1d1e29",
+  "muted-foreground": "#8a8ea1",
+  accent: "#272937",
+  "accent-foreground": "#d9c3b0",
+  destructive: "#c03c4b",
+  "destructive-foreground": "#ffffff",
+  success: "#04b69b",
+  "success-foreground": "#0b0e19",
+  warning: "#dcb428",
+  "warning-foreground": "#0b0e19",
+  info: "#048cb6",
+  "info-foreground": "#0b0e19",
+  border: "#272937",
+  input: "#272937",
+  ring: "#cdb092",
+  "surface-0": "#13141b",
+  "surface-1": "#1a1b25",
+  "surface-2": "#1d1e29",
+  "surface-3": "#272937",
+  "chart-1": "#cdb092",
+  "chart-2": "#04b69b",
+  "chart-3": "#048cb6",
+  "chart-4": "#635fb4",
+  "chart-5": "#df782d",
+  sidebar: "#00051c",
+  "sidebar-foreground": "#e6e6eb",
+  "sidebar-primary": "#cdb092",
+  "sidebar-primary-foreground": "#13141b",
+  "sidebar-accent": "#111944",
+  "sidebar-accent-foreground": "#e6e6eb",
+  "sidebar-border": "#1d244a",
+  "sidebar-ring": "#cdb092",
+};
+
+const noirTheme: TTheme = {
+  name: "noir",
+  schemes: ["dark"],
+  radius: "0.5rem",
+  typefaces: {
+    sans: '"Inter", sans-serif',
+    heading: '"Merriweather Sans", sans-serif',
+    mono: SYSTEM_MONO,
+  },
+  colors: { light: dark, dark },
+};
+
+export { noirTheme };

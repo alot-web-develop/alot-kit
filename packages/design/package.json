@@ -1,0 +1,45 @@
+{
+  "name": "@alot-web-develop/design",
+  "version": "0.2.0",
+  "description": "alot design tokens: semantic colors, radius and typefaces for Tailwind v4 (web), NativeWind v5 (React Native) and StyleSheet themes",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alot-web-develop/alot-kit.git",
+    "directory": "packages/design"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "sideEffects": [
+    "*.css"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./native": {
+      "types": "./dist/native.d.ts",
+      "import": "./dist/native.js"
+    },
+    "./tailwind.css": "./dist/tailwind.css",
+    "./nativewind.css": "./dist/nativewind.css",
+    "./tokens.css": "./dist/tokens.css",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "node -e \"require('node:fs').rmSync('dist', { recursive: true, force: true })\" && tsc -p tsconfig.build.json && node scripts/build-css.mjs",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@tailwindcss/node": "^4.3.3",
+    "@types/node": "^24.19.2",
+    "tailwindcss": "^4.3.3"
+  }
+}

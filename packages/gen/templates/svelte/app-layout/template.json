@@ -1,0 +1,19 @@
+{
+  "kind": "app-layout",
+  "framework": "svelte",
+  "description": "App layout",
+  "prefix": "alot-app-layout",
+  "scope": "svelte",
+  "requiresFeature": false,
+  "role": [
+    "app"
+  ],
+  "files": [
+    {
+      "src": "AppLayout.svelte",
+      "dest": "{paths.lib}/AppLayout.svelte",
+      "snippet": true
+    }
+  ],
+  "next": []
+}

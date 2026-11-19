@@ -1,0 +1,21 @@
+{
+  "kind": "composite",
+  "framework": "react-native",
+  "description": "Compound component built from @alot-web-develop/ui-native primitives",
+  "prefix": "alot-composite",
+  "scope": "typescriptreact",
+  "requiresFeature": true,
+  "role": [
+    "app"
+  ],
+  "files": [
+    {
+      "src": "__Name__.tsx",
+      "dest": "{paths.features}/{feature}/components/__Name__.tsx",
+      "snippet": true
+    }
+  ],
+  "next": [
+    "subcomponent"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "alot-kit",
+  "private": true,
+  "packageManager": "pnpm@12.16.1",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "build": "turbo run build",
+    "typecheck": "turbo run typecheck",
+    "lint": "biome check .",
+    "test": "turbo run test && node --test scripts/*.test.mjs",
+    "check": "pnpm build && pnpm typecheck && pnpm lint && pnpm test",
+    "version-packages": "changeset version",
+    "verify:registry": "node scripts/verify-registry.mjs",
+    "release": "pnpm build && changeset publish",
+    "release:check": "node scripts/check-release.mjs"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.6.4",
+    "@changesets/cli": "3.0.3",
+    "@types/node": "24.19.2",
+    "turbo": "2.11.10",
+    "typescript": "7.0.2",
+    "vitest": "5.0.5"
+  },
+  "license": "MIT"
+}

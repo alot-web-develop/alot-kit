@@ -1,0 +1,27 @@
+{
+  "kind": "env",
+  "framework": "fastify",
+  "description": "Zod env loader on @alot-web-develop/server loadEnv: base keys, group and production rules, no secret fallbacks",
+  "prefix": "alot-fastify-env",
+  "scope": "typescript",
+  "requiresFeature": false,
+  "role": [
+    "api"
+  ],
+  "files": [
+    {
+      "src": "env.ts",
+      "dest": "{paths.config}/env.ts",
+      "snippet": true
+    },
+    {
+      "src": ".env.example",
+      "dest": ".env.example"
+    }
+  ],
+  "next": [
+    "db",
+    "auth",
+    "server-entry"
+  ]
+}

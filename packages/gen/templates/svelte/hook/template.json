@@ -1,0 +1,19 @@
+{
+  "kind": "hook",
+  "framework": "svelte",
+  "description": "Hook",
+  "prefix": "alot-hook",
+  "scope": "typescript",
+  "requiresFeature": true,
+  "role": [
+    "app"
+  ],
+  "files": [
+    {
+      "src": "use__Name__.svelte.ts",
+      "dest": "{paths.features}/{feature}/hooks/use__Name__.svelte.ts",
+      "snippet": true
+    }
+  ],
+  "next": []
+}

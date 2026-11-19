@@ -1,0 +1,35 @@
+{
+  "kind": "theme",
+  "framework": "react-native",
+  "description": "NativeWind stylesheet importing design tokens + override block, Metro/PostCSS config, ThemeProvider (light/dark/system)",
+  "prefix": "alot-theme",
+  "scope": "typescriptreact",
+  "requiresFeature": false,
+  "role": [
+    "app"
+  ],
+  "files": [
+    {
+      "src": "global.css",
+      "dest": "global.css"
+    },
+    {
+      "src": "nativewind-env.d.ts",
+      "dest": "nativewind-env.d.ts"
+    },
+    {
+      "src": "metro.config.js",
+      "dest": "metro.config.js"
+    },
+    {
+      "src": "postcss.config.mjs",
+      "dest": "postcss.config.mjs"
+    },
+    {
+      "src": "ThemeProvider.tsx",
+      "dest": "{paths.src}/providers/ThemeProvider.tsx",
+      "snippet": true
+    }
+  ],
+  "next": []
+}

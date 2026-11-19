@@ -1,0 +1,31 @@
+{
+  "kind": "i18n",
+  "framework": "svelte",
+  "description": "I18n",
+  "prefix": "alot-i18n",
+  "scope": "typescript",
+  "requiresFeature": false,
+  "role": [
+    "app"
+  ],
+  "files": [
+    {
+      "src": "i18n.svelte.ts",
+      "dest": "{paths.lib}/i18n.svelte.ts",
+      "snippet": true
+    },
+    {
+      "src": "I18nProvider.svelte",
+      "dest": "{paths.lib}/I18nProvider.svelte"
+    },
+    {
+      "src": "en.ts",
+      "dest": "{paths.src}/locales/en.ts"
+    },
+    {
+      "src": "it.ts",
+      "dest": "{paths.src}/locales/it.ts"
+    }
+  ],
+  "next": []
+}

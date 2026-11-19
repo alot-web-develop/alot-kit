@@ -1,0 +1,13 @@
+{
+  "kind": "context",
+  "framework": "react",
+  "description": "Typed context + provider + use__Name__ hook that throws outside the provider",
+  "prefix": "alot-context",
+  "scope": "typescriptreact",
+  "requiresFeature": true,
+  "role": ["app"],
+  "files": [
+    { "src": "__Name__Context.tsx", "dest": "{paths.features}/{feature}/context/__Name__Context.tsx", "snippet": true }
+  ],
+  "next": ["hook"]
+}

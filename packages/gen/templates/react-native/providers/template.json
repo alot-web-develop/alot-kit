@@ -1,0 +1,23 @@
+{
+  "kind": "providers",
+  "framework": "react-native",
+  "description": "AppProviders: ErrorBoundary, SafeArea, Theme, QueryClient, Toaster (single composition point)",
+  "prefix": "alot-providers",
+  "scope": "typescriptreact",
+  "requiresFeature": false,
+  "role": [
+    "app"
+  ],
+  "files": [
+    {
+      "src": "AppProviders.tsx",
+      "dest": "{paths.src}/providers/AppProviders.tsx",
+      "snippet": true
+    }
+  ],
+  "next": [
+    "query-client",
+    "theme",
+    "i18n"
+  ]
+}

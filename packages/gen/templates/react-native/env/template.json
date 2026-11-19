@@ -1,0 +1,23 @@
+{
+  "kind": "env",
+  "framework": "react-native",
+  "description": "zod-validated EXPO_PUBLIC_* env, typed export, fails fast",
+  "prefix": "alot-env",
+  "scope": "typescript",
+  "requiresFeature": false,
+  "role": [
+    "app"
+  ],
+  "files": [
+    {
+      "src": "env.ts",
+      "dest": "{paths.config}/env.ts",
+      "snippet": true
+    },
+    {
+      "src": ".env.example",
+      "dest": ".env.example"
+    }
+  ],
+  "next": []
+}

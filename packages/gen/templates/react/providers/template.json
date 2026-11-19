@@ -1,0 +1,13 @@
+{
+  "kind": "providers",
+  "framework": "react",
+  "description": "AppProviders: ErrorBoundary, i18n, Theme, QueryClient, Auth, Toaster in one composition point (needs the app-components kind)",
+  "prefix": "alot-providers",
+  "scope": "typescriptreact",
+  "requiresFeature": false,
+  "role": ["app"],
+  "files": [
+    { "src": "AppProviders.tsx", "dest": "{paths.app}/AppProviders.tsx" }
+  ],
+  "next": ["app-entry"]
+}

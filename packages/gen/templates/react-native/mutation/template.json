@@ -1,0 +1,29 @@
+{
+  "kind": "mutation",
+  "framework": "react-native",
+  "description": "TanStack mutations (create/update/delete) with key invalidation",
+  "prefix": "alot-mutation",
+  "scope": "typescript",
+  "requiresFeature": false,
+  "role": [
+    "app"
+  ],
+  "files": [
+    {
+      "src": "useCreate__Name__.ts",
+      "dest": "{paths.api}/mutations/useCreate__Name__.ts",
+      "snippet": true
+    },
+    {
+      "src": "useUpdate__Name__.ts",
+      "dest": "{paths.api}/mutations/useUpdate__Name__.ts"
+    },
+    {
+      "src": "useDelete__Name__.ts",
+      "dest": "{paths.api}/mutations/useDelete__Name__.ts"
+    }
+  ],
+  "next": [
+    "form"
+  ]
+}

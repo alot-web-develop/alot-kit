@@ -1,0 +1,14 @@
+{
+  "kind": "locale",
+  "framework": "react",
+  "description": "Feature locale namespace {it,en} under t('<feature>.*'), auto-registered by lib/i18n (typed via FeatureLocales augmentation)",
+  "prefix": "alot-locale",
+  "scope": "typescript",
+  "requiresFeature": true,
+  "role": ["app"],
+  "files": [
+    { "src": "it.ts", "dest": "{paths.features}/{feature}/locales/it.ts", "snippet": true },
+    { "src": "en.ts", "dest": "{paths.features}/{feature}/locales/en.ts" }
+  ],
+  "next": ["form", "list-page"]
+}

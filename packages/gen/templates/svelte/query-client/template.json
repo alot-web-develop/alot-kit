@@ -1,0 +1,19 @@
+{
+  "kind": "query-client",
+  "framework": "svelte",
+  "description": "Query client",
+  "prefix": "alot-query-client",
+  "scope": "typescript",
+  "requiresFeature": false,
+  "role": [
+    "app"
+  ],
+  "files": [
+    {
+      "src": "queryClient.ts",
+      "dest": "{paths.lib}/queryClient.ts",
+      "snippet": true
+    }
+  ],
+  "next": []
+}

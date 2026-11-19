@@ -1,0 +1,33 @@
+{
+  "kind": "form",
+  "framework": "svelte",
+  "description": "Zod schema, enhanced Superforms form, Formsnap fields and independently validated server action",
+  "prefix": "alot-form",
+  "scope": "svelte",
+  "requiresFeature": true,
+  "role": [
+    "app"
+  ],
+  "files": [
+    {
+      "src": "schemas/__name__Schema.ts",
+      "dest": "{paths.features}/{feature}/schemas/__name__Schema.ts",
+      "snippet": true
+    },
+    {
+      "src": "__Name__Form.svelte",
+      "dest": "{paths.features}/{feature}/components/__Name__Form.svelte"
+    },
+    {
+      "src": "+page.server.ts",
+      "dest": "{paths.routes}/(protected)/__names-kebab__/new/+page.server.ts"
+    },
+    {
+      "src": "+page.svelte",
+      "dest": "{paths.routes}/(protected)/__names-kebab__/new/+page.svelte"
+    }
+  ],
+  "next": [
+    "mutation"
+  ]
+}

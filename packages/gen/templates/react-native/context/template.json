@@ -1,0 +1,19 @@
+{
+  "kind": "context",
+  "framework": "react-native",
+  "description": "Typed context + provider + use__Name__ hook (throws outside provider)",
+  "prefix": "alot-context",
+  "scope": "typescriptreact",
+  "requiresFeature": true,
+  "role": [
+    "app"
+  ],
+  "files": [
+    {
+      "src": "__Name__Context.tsx",
+      "dest": "{paths.features}/{feature}/context/__Name__Context.tsx",
+      "snippet": true
+    }
+  ],
+  "next": []
+}

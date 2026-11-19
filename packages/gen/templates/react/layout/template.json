@@ -1,0 +1,14 @@
+{
+  "kind": "layout",
+  "framework": "react",
+  "description": "Section layout: router-agnostic layout component (title, actions slot) + nested TanStack layout route with Outlet",
+  "prefix": "alot-layout",
+  "scope": "typescriptreact",
+  "requiresFeature": true,
+  "role": ["app"],
+  "files": [
+    { "src": "__Names__Layout.tsx", "dest": "{paths.features}/{feature}/components/__Names__Layout.tsx", "snippet": true },
+    { "src": "route.tsx", "dest": "{paths.routes}/_app/__names-kebab__/route.tsx" }
+  ],
+  "next": ["list-page", "route"]
+}

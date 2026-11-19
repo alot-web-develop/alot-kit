@@ -1,0 +1,25 @@
+{
+  "kind": "route",
+  "framework": "fastify",
+  "description": "Non-CRUD protected endpoint: route plugin (requireRole preHandler, full response schema) + body/result schemas + domain service + tests, wired into the protected scope",
+  "prefix": "alot-fastify-route",
+  "scope": "typescript",
+  "requiresFeature": false,
+  "role": ["api"],
+  "files": [
+    { "src": "schemas/__name__.ts", "dest": "{paths.schemas}/__name__.ts" },
+    { "src": "../service/__name__.ts", "dest": "{paths.services}/__name__.ts" },
+    { "src": "../service/__name__.test.ts", "dest": "{paths.services}/__name__.test.ts" },
+    { "src": "__name-kebab__.ts", "dest": "{paths.routes}/__name-kebab__.ts", "snippet": true },
+    { "src": "__name-kebab__.test.ts", "dest": "{paths.tests}/routes/__name-kebab__.test.ts" }
+  ],
+  "wire": [
+    {
+      "file": "{paths.routes}/protected.ts",
+      "import": "import { __name__Routes } from './__name-kebab__.js';",
+      "after": "// alot-gen: protected routes",
+      "line": "  await _app.register(__name__Routes, { prefix: '/__name-kebab__' });"
+    }
+  ],
+  "next": []
+}

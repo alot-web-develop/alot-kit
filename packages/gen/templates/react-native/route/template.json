@@ -1,0 +1,21 @@
+{
+  "kind": "route",
+  "framework": "react-native",
+  "description": "Thin Expo Router screen: reads params, renders the feature page",
+  "prefix": "alot-route",
+  "scope": "typescriptreact",
+  "requiresFeature": true,
+  "role": [
+    "app"
+  ],
+  "files": [
+    {
+      "src": "[id].tsx",
+      "dest": "{paths.routes}/(app)/{feature}/[id].tsx",
+      "snippet": true
+    }
+  ],
+  "next": [
+    "page"
+  ]
+}

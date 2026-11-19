@@ -1,0 +1,19 @@
+{
+  "kind": "app-entry",
+  "framework": "svelte",
+  "description": "App entry",
+  "prefix": "alot-app-entry",
+  "scope": "svelte",
+  "requiresFeature": false,
+  "role": [
+    "app"
+  ],
+  "files": [
+    {
+      "src": "+layout.svelte",
+      "dest": "{paths.routes}/+layout.svelte",
+      "snippet": true
+    }
+  ],
+  "next": []
+}

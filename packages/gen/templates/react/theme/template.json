@@ -1,0 +1,16 @@
+{
+  "kind": "theme",
+  "framework": "react",
+  "description": "App stylesheet on @alot-web-develop/design/tailwind.css (brand var overrides + extra @theme token) + ThemeProvider (light/dark/system, persisted, toggles .dark)",
+  "prefix": "alot-theme",
+  "scope": "typescriptreact",
+  "requiresFeature": false,
+  "role": ["app"],
+  "files": [
+    { "src": "app.css", "dest": "{paths.src}/app.css" },
+    { "src": "theme.ts", "dest": "{paths.lib}/theme/theme.ts" },
+    { "src": "useSystemTheme.ts", "dest": "{paths.lib}/theme/useSystemTheme.ts" },
+    { "src": "ThemeProvider.tsx", "dest": "{paths.lib}/theme/ThemeProvider.tsx" }
+  ],
+  "next": ["providers"]
+}

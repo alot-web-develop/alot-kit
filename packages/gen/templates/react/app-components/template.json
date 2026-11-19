@@ -1,0 +1,22 @@
+{
+  "kind": "app-components",
+  "framework": "react",
+  "description": "App-local composites built from @alot-web-develop/ui primitives: PageShell, QueryBoundary, DataTable, ListPagination, ErrorBoundary, Toaster (sonner) and react-hook-form + zod Form helpers",
+  "prefix": "alot-app-components",
+  "scope": "typescriptreact",
+  "requiresFeature": false,
+  "role": ["app"],
+  "files": [
+    { "src": "components/PageShell.tsx", "dest": "{paths.src}/components/PageShell.tsx" },
+    { "src": "components/QueryBoundary.tsx", "dest": "{paths.src}/components/QueryBoundary.tsx" },
+    { "src": "components/DataTable.tsx", "dest": "{paths.src}/components/DataTable.tsx" },
+    { "src": "components/ListPagination.tsx", "dest": "{paths.src}/components/ListPagination.tsx" },
+    { "src": "components/ErrorBoundary.tsx", "dest": "{paths.src}/components/ErrorBoundary.tsx" },
+    { "src": "components/Toaster.tsx", "dest": "{paths.src}/components/Toaster.tsx" },
+    { "src": "components/form/useZodForm.ts", "dest": "{paths.src}/components/form/useZodForm.ts" },
+    { "src": "components/form/Form.tsx", "dest": "{paths.src}/components/form/Form.tsx" },
+    { "src": "components/form/FormInput.tsx", "dest": "{paths.src}/components/form/FormInput.tsx" },
+    { "src": "components/form/index.ts", "dest": "{paths.src}/components/form/index.ts" }
+  ],
+  "next": ["providers", "app-layout"]
+}

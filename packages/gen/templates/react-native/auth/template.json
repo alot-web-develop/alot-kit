@@ -1,0 +1,41 @@
+{
+  "kind": "auth",
+  "framework": "react-native",
+  "description": "Auth adapter (useSession, signIn, signOut, getToken, getAuthHeaders), Better Auth cookie session via @better-auth/expo, RequireAuth, login screen",
+  "prefix": "alot-auth",
+  "scope": "typescriptreact",
+  "requiresFeature": false,
+  "role": [
+    "app"
+  ],
+  "files": [
+    {
+      "src": "types.ts",
+      "dest": "{paths.lib}/auth/types.ts"
+    },
+    {
+      "src": "betterAuth.ts",
+      "dest": "{paths.lib}/auth/betterAuth.ts"
+    },
+    {
+      "src": "index.ts",
+      "dest": "{paths.lib}/auth/index.ts",
+      "snippet": true
+    },
+    {
+      "src": "RequireAuth.tsx",
+      "dest": "{paths.lib}/auth/RequireAuth.tsx"
+    },
+    {
+      "src": "LoginForm.tsx",
+      "dest": "{paths.lib}/auth/LoginForm.tsx"
+    },
+    {
+      "src": "login.tsx",
+      "dest": "{paths.routes}/(auth)/login.tsx"
+    }
+  ],
+  "next": [
+    "app-layout"
+  ]
+}

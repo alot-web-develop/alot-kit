@@ -1,0 +1,13 @@
+{
+  "kind": "route",
+  "framework": "react",
+  "description": "Thin TanStack file route: reads the $id param, renders the feature detail page",
+  "prefix": "alot-route",
+  "scope": "typescriptreact",
+  "requiresFeature": true,
+  "role": ["app"],
+  "files": [
+    { "src": "$__name__Id.tsx", "dest": "{paths.routes}/_app/__names-kebab__/$__name__Id.tsx", "snippet": true }
+  ],
+  "next": ["page"]
+}

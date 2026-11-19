@@ -1,0 +1,72 @@
+{
+  "name": "@alot-web-develop/utils",
+  "version": "0.2.0",
+  "type": "module",
+  "license": "MIT",
+  "sideEffects": [
+    "./dist/dates.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alot-web-develop/alot-kit.git",
+    "directory": "packages/utils"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./format": {
+      "types": "./dist/format.d.ts",
+      "import": "./dist/format.js"
+    },
+    "./dates": {
+      "types": "./dist/dates.d.ts",
+      "import": "./dist/dates.js"
+    },
+    "./strings": {
+      "types": "./dist/strings.d.ts",
+      "import": "./dist/strings.js"
+    },
+    "./filters": {
+      "types": "./dist/filters.d.ts",
+      "import": "./dist/filters.js"
+    },
+    "./query": {
+      "types": "./dist/query.d.ts",
+      "import": "./dist/query.js"
+    },
+    "./collections": {
+      "types": "./dist/collections.d.ts",
+      "import": "./dist/collections.js"
+    },
+    "./guards": {
+      "types": "./dist/guards.d.ts",
+      "import": "./dist/guards.js"
+    },
+    "./async": {
+      "types": "./dist/async.d.ts",
+      "import": "./dist/async.js"
+    },
+    "./files": {
+      "types": "./dist/files.d.ts",
+      "import": "./dist/files.js"
+    }
+  },
+  "files": [
+    "dist",
+    "docs"
+  ],
+  "dependencies": {
+    "dayjs": "^1.11.23",
+    "es-toolkit": "^1.53.1"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "vitest run"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "kind": "subcomponent",
+  "framework": "svelte",
+  "description": "Subcomponent",
+  "prefix": "alot-subcomponent",
+  "scope": "svelte",
+  "requiresFeature": true,
+  "role": [
+    "app"
+  ],
+  "files": [
+    {
+      "src": "__Name__.svelte",
+      "dest": "{paths.features}/{feature}/components/__Name__.svelte",
+      "snippet": true
+    }
+  ],
+  "next": [
+    "hook"
+  ],
+  "requiresEntity": true
+}

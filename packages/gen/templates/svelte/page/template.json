@@ -1,0 +1,30 @@
+{
+  "kind": "page",
+  "framework": "svelte",
+  "description": "Page",
+  "prefix": "alot-page",
+  "scope": "svelte",
+  "requiresFeature": true,
+  "role": [
+    "app"
+  ],
+  "files": [
+    {
+      "src": "__Name__Page.svelte",
+      "dest": "{paths.features}/{feature}/pages/__Name__Page.svelte",
+      "snippet": true
+    },
+    {
+      "src": "components/__Name__Header.svelte",
+      "dest": "{paths.features}/{feature}/components/__Name__Header.svelte"
+    },
+    {
+      "src": "components/__Name__Content.svelte",
+      "dest": "{paths.features}/{feature}/components/__Name__Content.svelte"
+    }
+  ],
+  "next": [
+    "query",
+    "subcomponent"
+  ]
+}

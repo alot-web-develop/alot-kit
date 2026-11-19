@@ -1,0 +1,23 @@
+{
+  "kind": "auth",
+  "framework": "react",
+  "description": "lib/auth adapter (useSession, signIn, signOut, getToken, Provider) + default Better Auth impl + RequireAuth guard + login route. Only lib/auth/betterAuth.ts imports better-auth",
+  "prefix": "alot-auth",
+  "scope": "typescript",
+  "requiresFeature": false,
+  "role": ["app"],
+  "files": [
+    { "src": "lib/types.ts", "dest": "{paths.lib}/auth/types.ts" },
+    { "src": "lib/betterAuth.ts", "dest": "{paths.lib}/auth/betterAuth.ts" },
+    { "src": "lib/index.ts", "dest": "{paths.lib}/auth/index.ts" },
+    { "src": "lib/RequireAuth.tsx", "dest": "{paths.lib}/auth/RequireAuth.tsx" },
+    { "src": "feature/schemas/loginSchema.ts", "dest": "{paths.features}/auth/schemas/loginSchema.ts" },
+    { "src": "feature/hooks/useSignIn.ts", "dest": "{paths.features}/auth/hooks/useSignIn.ts" },
+    { "src": "feature/components/LoginForm.tsx", "dest": "{paths.features}/auth/components/LoginForm.tsx" },
+    { "src": "feature/pages/LoginPage.tsx", "dest": "{paths.features}/auth/pages/LoginPage.tsx" },
+    { "src": "feature/locales/it.ts", "dest": "{paths.features}/auth/locales/it.ts" },
+    { "src": "feature/locales/en.ts", "dest": "{paths.features}/auth/locales/en.ts" },
+    { "src": "routes/login.tsx", "dest": "{paths.routes}/login.tsx" }
+  ],
+  "next": ["api-client", "app-layout"]
+}

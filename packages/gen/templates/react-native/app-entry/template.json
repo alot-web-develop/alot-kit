@@ -1,0 +1,21 @@
+{
+  "kind": "app-entry",
+  "framework": "react-native",
+  "description": "Expo Router root layout: global styles + AppProviders + Slot",
+  "prefix": "alot-app-entry",
+  "scope": "typescriptreact",
+  "requiresFeature": false,
+  "role": [
+    "app"
+  ],
+  "files": [
+    {
+      "src": "_layout.tsx",
+      "dest": "{paths.routes}/_layout.tsx",
+      "snippet": true
+    }
+  ],
+  "next": [
+    "providers"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "kind": "util",
+  "framework": "react",
+  "description": "Pure project-specific util + test (check @alot-web-develop/utils first)",
+  "prefix": "alot-util",
+  "scope": "typescript",
+  "requiresFeature": false,
+  "role": ["app", "ui-lib"],
+  "files": [
+    { "src": "__name__.ts", "dest": "{paths.utils}/__name__.ts", "snippet": true },
+    { "src": "__name__.test.ts", "dest": "{paths.utils}/__name__.test.ts" }
+  ],
+  "next": []
+}

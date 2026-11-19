@@ -1,0 +1,13 @@
+{
+  "kind": "job",
+  "framework": "fastify",
+  "description": "Standalone script/job: pure run function with injected db (testable) + main() when executed directly",
+  "prefix": "alot-fastify-job",
+  "scope": "typescript",
+  "requiresFeature": false,
+  "role": ["api"],
+  "files": [
+    { "src": "__name__.ts", "dest": "{paths.jobs}/__name__.ts", "snippet": true }
+  ],
+  "next": []
+}

@@ -1,0 +1,14 @@
+{
+  "kind": "env",
+  "framework": "react",
+  "description": "Zod-validated public env (import.meta.env), typed export, fails fast at startup",
+  "prefix": "alot-env",
+  "scope": "typescript",
+  "requiresFeature": false,
+  "role": ["app"],
+  "files": [
+    { "src": "env.ts", "dest": "{paths.config}/env.ts" },
+    { "src": ".env.example", "dest": ".env.example" }
+  ],
+  "next": ["api-client"]
+}

@@ -1,0 +1,25 @@
+{
+  "kind": "app-layout",
+  "framework": "react-native",
+  "description": "Root shell: authenticated tab navigator (header + bottom nav + content outlet)",
+  "prefix": "alot-app-layout",
+  "scope": "typescriptreact",
+  "requiresFeature": false,
+  "role": [
+    "app"
+  ],
+  "files": [
+    {
+      "src": "_layout.tsx",
+      "dest": "{paths.routes}/(app)/_layout.tsx",
+      "snippet": true
+    },
+    {
+      "src": "index.tsx",
+      "dest": "{paths.routes}/(app)/index.tsx"
+    }
+  ],
+  "next": [
+    "layout"
+  ]
+}

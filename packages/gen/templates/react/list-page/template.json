@@ -1,0 +1,19 @@
+{
+  "kind": "list-page",
+  "framework": "react",
+  "description": "List page: debounced search + pagination + DataTable (app-local) via QueryBoundary; search params validated by zod and synced to the URL by the route",
+  "prefix": "alot-list-page",
+  "scope": "typescriptreact",
+  "requiresFeature": true,
+  "role": ["app"],
+  "files": [
+    { "src": "pages/__Name__ListPage.tsx", "dest": "{paths.features}/{feature}/pages/__Name__ListPage.tsx", "snippet": true },
+    { "src": "components/__Name__ListFilters.tsx", "dest": "{paths.features}/{feature}/components/__Name__ListFilters.tsx" },
+    { "src": "components/__Name__Table.tsx", "dest": "{paths.features}/{feature}/components/__Name__Table.tsx" },
+    { "src": "hooks/use__Name__SearchInput.ts", "dest": "{paths.features}/{feature}/hooks/use__Name__SearchInput.ts" },
+    { "src": "hooks/use__Name__Columns.ts", "dest": "{paths.features}/{feature}/hooks/use__Name__Columns.ts" },
+    { "src": "schemas/__name__ListSearchSchema.ts", "dest": "{paths.features}/{feature}/schemas/__name__ListSearchSchema.ts" },
+    { "src": "routes/index.tsx", "dest": "{paths.routes}/_app/__names-kebab__/index.tsx" }
+  ],
+  "next": ["route", "locale"]
+}

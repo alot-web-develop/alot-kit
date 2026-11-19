@@ -1,0 +1,13 @@
+{
+  "kind": "test",
+  "framework": "fastify",
+  "description": "Route test for a CRUD resource via createTestApp + inject: auth, happy path, validation, not-found, ownership",
+  "prefix": "alot-fastify-test",
+  "scope": "typescript",
+  "requiresFeature": false,
+  "role": ["api"],
+  "files": [
+    { "src": "__names-kebab__.test.ts", "dest": "{paths.tests}/routes/__names-kebab__.test.ts", "snippet": true }
+  ],
+  "next": []
+}

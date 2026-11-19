@@ -1,0 +1,14 @@
+import { randomUUID } from 'node:crypto';
+import { buildApp } from '../../src/app.js';
+import { env } from '../../src/config/env.js';
+import { testAuthAdapter } from './auth.js';
+
+// Installed over the generated database-backed test helper by verify.mjs.
+const createTestApp = async () => {
+  const app = await buildApp({ mongoUri: `mongodb://test-double/${randomUUID()}`, auth: testAuthAdapter });
+  await app.ready();
+  return { app, url: (path: string) => `${env.API_PREFIX}${path}`, close: () => app.close() };
+};
+type TTestApp = Awaited<ReturnType<typeof createTestApp>>;
+export { createTestApp };
+export type { TTestApp };

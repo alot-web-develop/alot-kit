@@ -1,0 +1,16 @@
+@import '@alot-web-develop/design/tailwind.css';
+
+:root {
+  --primary: oklch(0.55 0.19 260);
+  --primary-foreground: oklch(0.99 0 0);
+  --brand-accent: oklch(0.72 0.15 180);
+}
+
+.dark {
+  --primary: oklch(0.72 0.14 260);
+  --primary-foreground: oklch(0.16 0.02 260);
+}
+
+@theme inline {
+  --color-brand-accent: var(--brand-accent);
+}

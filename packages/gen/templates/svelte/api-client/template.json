@@ -1,0 +1,19 @@
+{
+  "kind": "api-client",
+  "framework": "svelte",
+  "description": "Api client",
+  "prefix": "alot-api-client",
+  "scope": "typescript",
+  "requiresFeature": false,
+  "role": [
+    "app"
+  ],
+  "files": [
+    {
+      "src": "client.ts",
+      "dest": "{paths.api}/client.ts",
+      "snippet": true
+    }
+  ],
+  "next": []
+}

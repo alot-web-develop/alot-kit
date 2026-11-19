@@ -1,0 +1,25 @@
+{
+  "kind": "route",
+  "framework": "svelte",
+  "description": "Route",
+  "prefix": "alot-route",
+  "scope": "svelte",
+  "requiresFeature": true,
+  "role": [
+    "app"
+  ],
+  "files": [
+    {
+      "src": "+page.ts",
+      "dest": "{paths.routes}/(protected)/__names-kebab__/[id]/+page.ts",
+      "snippet": true
+    },
+    {
+      "src": "+page.svelte",
+      "dest": "{paths.routes}/(protected)/__names-kebab__/[id]/+page.svelte"
+    }
+  ],
+  "next": [
+    "page"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "kind": "store",
+  "framework": "svelte",
+  "description": "Store",
+  "prefix": "alot-store",
+  "scope": "typescript",
+  "requiresFeature": true,
+  "role": [
+    "app"
+  ],
+  "files": [
+    {
+      "src": "__name__Store.svelte.ts",
+      "dest": "{paths.features}/{feature}/stores/__name__Store.svelte.ts",
+      "snippet": true
+    }
+  ],
+  "next": [],
+  "variants": {
+    "persisted": {
+      "files": [
+        {
+          "src": "__name__PersistedStore.svelte.ts",
+          "dest": "{paths.features}/{feature}/stores/__name__Store.svelte.ts"
+        }
+      ]
+    }
+  }
+}

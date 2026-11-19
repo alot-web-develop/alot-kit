@@ -1,0 +1,19 @@
+{
+  "kind": "env",
+  "framework": "svelte",
+  "description": "Env",
+  "prefix": "alot-env",
+  "scope": "typescript",
+  "requiresFeature": false,
+  "role": [
+    "app"
+  ],
+  "files": [
+    {
+      "src": "env.ts",
+      "dest": "{paths.config}/env.ts",
+      "snippet": true
+    }
+  ],
+  "next": []
+}

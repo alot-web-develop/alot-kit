@@ -1,0 +1,14 @@
+{
+  "kind": "service",
+  "framework": "fastify",
+  "description": "Domain service factory with injected deps (no Fastify imports) + unit test",
+  "prefix": "alot-fastify-service",
+  "scope": "typescript",
+  "requiresFeature": false,
+  "role": ["api"],
+  "files": [
+    { "src": "__name__.ts", "dest": "{paths.services}/__name__.ts", "snippet": true },
+    { "src": "__name__.test.ts", "dest": "{paths.services}/__name__.test.ts" }
+  ],
+  "next": ["route"]
+}

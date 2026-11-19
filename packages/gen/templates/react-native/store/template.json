@@ -1,0 +1,26 @@
+{
+  "kind": "store",
+  "framework": "react-native",
+  "description": "Zustand store; --persist adds AsyncStorage persistence",
+  "prefix": "alot-store",
+  "scope": "typescript",
+  "requiresFeature": true,
+  "role": [
+    "app"
+  ],
+  "files": [
+    {
+      "src": "use__Name__Store.ts",
+      "dest": "{paths.features}/{feature}/store/use__Name__Store.ts",
+      "snippet": true,
+      "unlessFlag": "persist"
+    },
+    {
+      "src": "use__Name__Store.persisted.ts",
+      "dest": "{paths.features}/{feature}/store/use__Name__Store.ts",
+      "snippet": true,
+      "flag": "persist"
+    }
+  ],
+  "next": []
+}

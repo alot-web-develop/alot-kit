@@ -1,0 +1,14 @@
+{
+  "kind": "query-keys",
+  "framework": "react",
+  "description": "Query key factory for an entity",
+  "prefix": "alot-keys",
+  "scope": "typescript",
+  "requiresFeature": false,
+  "role": ["app"],
+  "files": [
+    { "src": "__name__Keys.ts", "dest": "{paths.api}/keys/__name__Keys.ts", "snippet": true, "unlessFlag": "parent" },
+    { "src": "parent.ts", "dest": "{paths.api}/keys/__name__Keys.ts", "flag": "parent" }
+  ],
+  "next": ["query"]
+}

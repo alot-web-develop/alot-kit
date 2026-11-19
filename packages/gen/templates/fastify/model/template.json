@@ -1,0 +1,23 @@
+{
+  "kind": "model",
+  "framework": "fastify",
+  "description": "Typed collection + indexes registered in models/index.ts (native), or Mongoose schema + model (mongoose)",
+  "prefix": "alot-fastify-model",
+  "scope": "typescript",
+  "requiresFeature": false,
+  "role": ["api"],
+  "files": [
+    { "src": "__name__.ts", "dest": "{paths.models}/__name__.ts", "when": { "db": "mongodb-native" }, "snippet": true },
+    { "src": "__name__.mongoose.ts", "dest": "{paths.models}/__name__.ts", "when": { "db": "mongoose" }, "snippet": true }
+  ],
+  "wire": [
+    {
+      "when": { "db": "mongodb-native" },
+      "file": "{paths.models}/index.ts",
+      "import": "import { ensure__Name__Indexes } from './__name__.js';",
+      "after": "const indexBuilders: TIndexBuilder[] = [",
+      "line": "  ensure__Name__Indexes,"
+    }
+  ],
+  "next": ["resource"]
+}

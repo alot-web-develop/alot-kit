@@ -1,0 +1,48 @@
+name: Release
+on:
+  workflow_dispatch:
+    inputs:
+      since:
+        description: Last released Git ref for package changeset coverage
+        required: true
+        type: string
+permissions:
+  contents: write
+  pull-requests: write
+  # npm trusted publishing (OIDC): no stored npm token
+  id-token: write
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  release:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      - uses: pnpm/action-setup@v6
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: package.json
+          cache: pnpm
+          registry-url: https://registry.npmjs.org
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm check
+      - run: pnpm release:check --since "$RELEASE_BASE"
+        env:
+          RELEASE_BASE: ${{ inputs.since }}
+      - id: changesets
+        uses: changesets/action@66d7d1ddafddf1ef45f98ee51a7496f9cdadb2f4 # v2.1.2, compatible with Changesets 3
+        with:
+          version-script: pnpm version-packages
+          publish-script: pnpm release
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+        env:
+          # Provenance only works from CI; local publishes skip it.
+          NPM_CONFIG_PROVENANCE: "true"
+      - name: Install and exercise the published packages
+        if: steps.changesets.outputs.has-changesets == 'false'
+        run: pnpm verify:registry

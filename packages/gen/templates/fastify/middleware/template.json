@@ -1,0 +1,13 @@
+{
+  "kind": "middleware",
+  "framework": "fastify",
+  "description": "Hook factory usable as onRequest/preHandler (example: shared-secret header check with constant-time compare)",
+  "prefix": "alot-fastify-middleware",
+  "scope": "typescript",
+  "requiresFeature": false,
+  "role": ["api"],
+  "files": [
+    { "src": "__name__.ts", "dest": "{paths.hooks}/__name__.ts", "snippet": true }
+  ],
+  "next": []
+}

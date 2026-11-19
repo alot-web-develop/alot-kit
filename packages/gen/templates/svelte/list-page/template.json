@@ -1,0 +1,31 @@
+{
+  "kind": "list-page",
+  "framework": "svelte",
+  "description": "List page",
+  "prefix": "alot-list-page",
+  "scope": "svelte",
+  "requiresFeature": true,
+  "role": [
+    "app"
+  ],
+  "files": [
+    {
+      "src": "__Names__Page.svelte",
+      "dest": "{paths.features}/{feature}/pages/__Names__Page.svelte",
+      "snippet": true
+    },
+    {
+      "src": "__Names__Table.svelte",
+      "dest": "{paths.features}/{feature}/components/__Names__Table.svelte"
+    },
+    {
+      "src": "__name__Filters.ts",
+      "dest": "{paths.features}/{feature}/utils/__name__Filters.ts"
+    },
+    {
+      "src": "+page.svelte",
+      "dest": "{paths.routes}/(protected)/__names-kebab__/+page.svelte"
+    }
+  ],
+  "next": []
+}

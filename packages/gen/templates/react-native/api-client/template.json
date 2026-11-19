@@ -1,0 +1,21 @@
+{
+  "kind": "api-client",
+  "framework": "react-native",
+  "description": "api/client: createFetcher with the Better Auth session cookie header (credentials omit) + onUnauthorized -> signOut",
+  "prefix": "alot-api-client",
+  "scope": "typescript",
+  "requiresFeature": false,
+  "role": [
+    "app"
+  ],
+  "files": [
+    {
+      "src": "client.ts",
+      "dest": "{paths.api}/client.ts",
+      "snippet": true
+    }
+  ],
+  "next": [
+    "service"
+  ]
+}

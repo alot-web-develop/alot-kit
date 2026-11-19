@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES2022", "module": "ESNext", "moduleResolution": "Bundler",
+    "jsx": "react-jsx", "strict": true, "noUncheckedIndexedAccess": true,
+    "skipLibCheck": true, "noEmit": true, "types": [],
+    "paths": {
+      "@/*": ["./.out/src/*"],
+      "@alot-web-develop/ui-native/*": ["./stubs/ui-native/*"],
+      "@alot-web-develop/api": ["./stubs/api.ts"],
+      "@alot-web-develop/utils/*": ["./stubs/utils/*"]
+    }
+  },
+  "include": [".out/**/*.ts", ".out/**/*.tsx", "stubs", "env.d.ts"]
+}

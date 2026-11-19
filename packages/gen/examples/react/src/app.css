@@ -1,0 +1,24 @@
+@import 'tailwindcss';
+@import '@alot-web-develop/design/tailwind.css';
+
+@source '../node_modules/@alot-web-develop/ui';
+
+:root {
+  --primary: oklch(0.55 0.2 260);
+  --primary-foreground: oklch(0.98 0 0);
+  --radius: 0.75rem;
+  --pending: oklch(0.8 0.15 85);
+  --pending-foreground: oklch(0.25 0.05 85);
+}
+
+.dark {
+  --primary: oklch(0.7 0.16 260);
+  --primary-foreground: oklch(0.15 0 0);
+  --pending: oklch(0.7 0.14 85);
+  --pending-foreground: oklch(0.15 0.03 85);
+}
+
+@theme inline {
+  --color-pending: var(--pending);
+  --color-pending-foreground: var(--pending-foreground);
+}

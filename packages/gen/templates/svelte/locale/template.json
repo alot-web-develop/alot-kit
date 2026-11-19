@@ -1,0 +1,27 @@
+{
+  "kind": "locale",
+  "framework": "svelte",
+  "description": "Locale",
+  "prefix": "alot-locale",
+  "scope": "typescript",
+  "requiresFeature": true,
+  "role": [
+    "app"
+  ],
+  "files": [
+    {
+      "src": "en.ts",
+      "dest": "{paths.features}/{feature}/locales/en.ts",
+      "snippet": true
+    },
+    {
+      "src": "it.ts",
+      "dest": "{paths.features}/{feature}/locales/it.ts"
+    },
+    {
+      "src": "index.ts",
+      "dest": "{paths.features}/{feature}/locales/index.ts"
+    }
+  ],
+  "next": []
+}

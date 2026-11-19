@@ -1,0 +1,51 @@
+{
+  "kind": "auth",
+  "framework": "svelte",
+  "description": "Swappable auth adapter, Better Auth JWT client, request-scoped server session and route/component guards",
+  "prefix": "alot-auth",
+  "scope": "typescript",
+  "requiresFeature": false,
+  "role": [
+    "app"
+  ],
+  "files": [
+    {
+      "src": "auth.ts",
+      "dest": "{paths.lib}/auth.ts",
+      "snippet": true
+    },
+    {
+      "src": "authContext.ts",
+      "dest": "{paths.lib}/authContext.ts"
+    },
+    {
+      "src": "auth.server.ts",
+      "dest": "{paths.lib}/auth.server.ts"
+    },
+    {
+      "src": "AuthProvider.svelte",
+      "dest": "{paths.lib}/AuthProvider.svelte"
+    },
+    {
+      "src": "RequireAuth.svelte",
+      "dest": "{paths.lib}/RequireAuth.svelte"
+    },
+    {
+      "src": "+layout.server.ts",
+      "dest": "{paths.routes}/(protected)/+layout.server.ts"
+    },
+    {
+      "src": "+layout.svelte",
+      "dest": "{paths.routes}/(protected)/+layout.svelte"
+    },
+    {
+      "src": "login.svelte",
+      "dest": "{paths.routes}/login/+page.svelte"
+    },
+    {
+      "src": "authRedirect.ts",
+      "dest": "{paths.lib}/authRedirect.ts"
+    }
+  ],
+  "next": []
+}

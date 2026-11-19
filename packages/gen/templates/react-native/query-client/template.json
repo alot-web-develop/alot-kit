@@ -1,0 +1,19 @@
+{
+  "kind": "query-client",
+  "framework": "react-native",
+  "description": "QueryClient: staleTime, retry skips 4xx, global error toast, RN focus manager",
+  "prefix": "alot-query-client",
+  "scope": "typescript",
+  "requiresFeature": false,
+  "role": [
+    "app"
+  ],
+  "files": [
+    {
+      "src": "queryClient.ts",
+      "dest": "{paths.lib}/queryClient.ts",
+      "snippet": true
+    }
+  ],
+  "next": []
+}

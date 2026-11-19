@@ -1,0 +1,31 @@
+{
+  "kind": "providers",
+  "framework": "svelte",
+  "description": "Providers",
+  "prefix": "alot-providers",
+  "scope": "svelte",
+  "requiresFeature": false,
+  "role": [
+    "app"
+  ],
+  "files": [
+    {
+      "src": "AppProviders.svelte",
+      "dest": "{paths.lib}/AppProviders.svelte",
+      "snippet": true
+    },
+    {
+      "src": "ErrorBoundary.svelte",
+      "dest": "{paths.lib}/ErrorBoundary.svelte"
+    },
+    {
+      "src": "+error.svelte",
+      "dest": "{paths.routes}/+error.svelte"
+    },
+    {
+      "src": "AppToaster.svelte",
+      "dest": "{paths.lib}/AppToaster.svelte"
+    }
+  ],
+  "next": []
+}

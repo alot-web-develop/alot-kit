@@ -1,0 +1,37 @@
+{
+  "kind": "composite",
+  "framework": "svelte",
+  "description": "Composite",
+  "prefix": "alot-composite",
+  "scope": "svelte",
+  "requiresFeature": true,
+  "role": [
+    "app"
+  ],
+  "files": [
+    {
+      "src": "__Name__Root.svelte",
+      "dest": "{paths.features}/{feature}/components/__Name__/__Name__Root.svelte",
+      "snippet": true
+    },
+    {
+      "src": "__Name__Header.svelte",
+      "dest": "{paths.features}/{feature}/components/__Name__/__Name__Header.svelte"
+    },
+    {
+      "src": "__Name__Body.svelte",
+      "dest": "{paths.features}/{feature}/components/__Name__/__Name__Body.svelte"
+    },
+    {
+      "src": "__Name__Footer.svelte",
+      "dest": "{paths.features}/{feature}/components/__Name__/__Name__Footer.svelte"
+    },
+    {
+      "src": "index.ts",
+      "dest": "{paths.features}/{feature}/components/__Name__/index.ts"
+    }
+  ],
+  "next": [
+    "subcomponent"
+  ]
+}

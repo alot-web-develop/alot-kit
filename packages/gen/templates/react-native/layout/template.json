@@ -1,0 +1,22 @@
+{
+  "kind": "layout",
+  "framework": "react-native",
+  "description": "Feature section layout: nested Stack with title and header actions slot",
+  "prefix": "alot-layout",
+  "scope": "typescriptreact",
+  "requiresFeature": true,
+  "role": [
+    "app"
+  ],
+  "files": [
+    {
+      "src": "_layout.tsx",
+      "dest": "{paths.routes}/(app)/{feature}/_layout.tsx",
+      "snippet": true
+    }
+  ],
+  "next": [
+    "route",
+    "list-page"
+  ]
+}
