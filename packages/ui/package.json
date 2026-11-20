@@ -36,7 +36,7 @@
     "@alot-web-develop/design": "workspace:*",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
-    "lucide-react": "^1.66.0",
+    "lucide-react": "^1.74.0",
     "radix-ui": "^1.8.1",
     "tailwind-merge": "^3.7.0",
     "tw-animate-css": "^1.4.0"

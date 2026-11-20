@@ -62,7 +62,7 @@
   ],
   "dependencies": {
     "dayjs": "^1.11.23",
-    "es-toolkit": "^1.53.1"
+    "es-toolkit": "^1.53.2"
   },
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
