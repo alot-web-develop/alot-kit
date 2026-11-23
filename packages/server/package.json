@@ -36,8 +36,8 @@
   },
   "dependencies": {
     "fastify-plugin": "^6.0.1",
-    "@aws-sdk/client-s3": "^3.1161.0",
-    "@aws-sdk/s3-request-presigner": "^3.1161.0"
+    "@aws-sdk/client-s3": "^3.1173.0",
+    "@aws-sdk/s3-request-presigner": "^3.1173.0"
   },
   "devDependencies": {
     "fastify": "^5.12.8",
